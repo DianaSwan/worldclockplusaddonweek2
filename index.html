@@ -9,13 +9,25 @@
   </head>
   <body>
     <div class="world-clock-app">
-    <header>
-    <main>
-      <h1>World Clock</h1>
-      <form>
-        <label for="location-select">Choose a location:</label>
-      </form>
-    </header>
+      <header>
+        <h1>World Clock</h1>
+        <form>
+          <label for="location-select">Choose a location:</label>
+          <select id="location-select" class="location-select">
+            <option value="local">Local Time</option>
+            <option value="America/New_York">New York</option>
+            <option value="Europe/London">London</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+          </select>
+        </form>
+        <a href="index.html" class="homepage-link">Back to Homepage</a>
+      </header>
+      <main>
+        <div class="time-display">
+          <h2 id="local-time">Local Time: --:--</h2>
+          <h2 id="time-zone-1">New York: --:--</h2>
+          <h2 id="time-zone-2">London: --:--</h2>
+          <h2 id="time-zone-3">Tokyo: --:--</h2>
   </div>
 </main>
 <footer>
