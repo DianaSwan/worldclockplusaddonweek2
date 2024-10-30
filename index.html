@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>swanworldclock</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
@@ -25,15 +28,38 @@
       </header>
       <main>
         <div class="time-display">
-          <h2 id="local-time">Local Time: --:--</h2>
-          <h2 id="time-zone-1">New York: --:--</h2>
-          <h2 id="time-zone-2">London: --:--</h2>
-          <h2 id="time-zone-3">Tokyo: --:--</h2>
-  </div>
-</main>
-<footer>
-  This project was coded by Diana Swan and is open-sourced on Github and hosted on Netlify. 
-</footer>
+          <div class="time-card">
+            <span class="time-card-title">Local Time</span>
+            <span class="time-card-details" id="local-time"
+              >Wed, October 30th 2024 15:23:45</span
+            >
+          </div>
+          <div class="time-card">
+            <span class="time-card-title">New York</span>
+            <span class="time-card-details" id="time-zone-1"
+              >Wed, October 30th 2024 10:23:45</span
+            >
+          </div>
+          <div class="time-card">
+            <span class="time-card-title">London</span>
+            <span class="time-card-details" id="time-zone-2"
+              >Wed, October 30th 2024 15:23:45</span
+            >
+          </div>
+          <div class="time-card">
+            <span class="time-card-title">Tokyo</span>
+            <span class="time-card-details" id="time-zone-3"
+              >Wed, October 30th 2024 00:23:45</span
+            >
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        This project was coded by Diana Swan and is open-sourced on GitHub and
+        hosted on Netlify.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
