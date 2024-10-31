@@ -52,13 +52,13 @@ select {
 
 .date {
   font-size: 14px;
-  color: #7f8c8d;
+  color: black;
 }
 
 .time {
   font-size: 32px;
   font-weight: bold;
-  color: #090202;
+  color: black;
   margin-left: 20px;
 }
 
