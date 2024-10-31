@@ -3,63 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>swanworldclock</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+    <title>World Clock by Diana Swan</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <div class="world-clock-app">
-      <header>
-        <h1>World Clock</h1>
-        <form>
-          <label for="location-select">Choose a location:</label>
-          <select id="location-select" class="location-select">
-            <option value="local">Local Time</option>
-            <option value="America/New_York">New York</option>
-            <option value="Europe/London">London</option>
-            <option value="Asia/Tokyo">Tokyo</option>
-          </select>
-        </form>
-        <a href="index.html" class="homepage-link">Back to Homepage</a>
-      </header>
-      <main>
-        <div class="time-display">
-          <div class="time-card">
-            <span class="time-card-title">Local Time</span>
-            <span class="time-card-details" id="local-time">
-              Wed, October 30th 2024 15:23:45
-            </span>
-          </div>
-          <div class="time-card">
-            <span class="time-card-title">New York</span>
-            <span class="time-card-details" id="time-zone-1">
-              Wed, October 30th 2024 10:23:45
-            </span>
-          </div>
-          <div class="time-card">
-            <span class="time-card-title">London</span>
-            <span class="time-card-details" id="time-zone-2">
-              Wed, October 30th 2024 15:23:45
-            </span>
-          </div>
-          <div class="time-card">
-            <span class="time-card-title">Tokyo</span>
-            <span class="time-card-details" id="time-zone-3">
-              Wed, October 30th 2024 00:23:45
-            </span>
-          </div>
-        </div>
-      </main>
+    <div class="container">
+      <h1>World Clock</h1>
+      <select id="city">
+        <option value="">Select a city</option>
+        <option value="current">My current location (Nairobi)</option>
+        <option value="Africa/Nairobi">Nairobi</option>
+        <option value="Africa/Cairo">Cairo</option>
+        <option value="Africa/Johannesburg">Johannesburg</option>
+        <option value="Africa/Lagos">Lagos</option>
+        <option value="Africa/Accra">Accra</option>
+        <option value="Africa/Harare">Harare</option>
+        <option value="Africa/Kampala">Kampala</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="America/New_York">New York</option>
+        <option value="Europe/London">London</option>
+      </select>
 
-      <footer>
-        This project was coded by Diana Swan and is open-sourced on GitHub and
-        hosted on Netlify.
-      </footer>
+      <div id="cities-container">
+        <div class="cities" id="perth">
+          <div>
+            <h2>Nairobi</h2>
+            <div class="date">November 1st, 2024</div>
+          </div>
+          <div class="time">12:10:31 <small>AM</small></div>
+        </div>
+        <div class="cities" id="barcelona">
+          <div>
+            <h2>Barcelona</h2>
+            <div class="date">October 31st, 2024</div>
+          </div>
+          <div class="time">5:10:31 <small>PM</small></div>
+        </div>
+        <div class="cities" id="los-angeles">
+          <div>
+            <h2>Los Angeles</h2>
+            <div class="date">October 31st, 2024</div>
+          </div>
+          <div class="time">9:10:31 <small>AM</small></div>
+        </div>
+      </div>
     </div>
+    <footer>
+      Coded by
+      <a href="https://github.com/DianaSwan" target="_blank">Aglae Hernandez</a
+      >, is open-sourced on
+      <a
+        href="https://github.com/DianaSwan/swanweatherforecastweek8"
+        target="_blank"
+        >GitHub</a
+      >
+      and hosted on
+      <a href="https://w" target="_blank">Netlify</a>.
+    </footer>
+
     <script src="src/index.js"></script>
   </body>
 </html>
